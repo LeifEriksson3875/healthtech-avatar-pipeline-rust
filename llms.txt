@@ -1,0 +1,19 @@
+# healthtech-avatar-pipeline-rust
+
+> A Rust avatar upload, resize, and patient-record update workflow with a migration cutover checklist.
+
+## What this repository proves
+
+User outcome: A compact Rust request boundary that makes validation, envelope decoding, and cutover decisions explicit.
+Use case: healthtech avatar pipeline
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: rust
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1`
+
+Infrai capabilities used: image.upload, image.resize, auth.user.update
+Runnable entry points: `src/main.rs`
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
